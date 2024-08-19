@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+  <head>
+    <title>CSC864 Project</title>
+  </head>
+  <body>
+    <div style="text-align: center;;">
+      <!-- <button id="save-button" onclick="saveResults()">Save Results</button> -->
+      <input type="text" id="search-box">
+      <button id="search-button">Search</button>
+      <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+      <select id="saved-files" onchange="getStoredFile()"></select>
+      <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+      <label><input type="checkbox" id="checkbox">Top 10</label>
+      <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+      <span>Amount: <b id="amount">0</b></span>
+      <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+      <button id="back-button" disabled>Back</button>
+    </div>
+    <div id="selection" style="text-align: center; margin: 0.5em;"></div>
+    <div style="display:grid; grid-template-columns: 0.2fr 3fr 0.2fr 1fr 0.2fr; height: 80vh">
+      <div id="content" style="grid-column: 2; overflow: scroll;"></div>
+      <div id="word-bars" style="grid-column: 4; overflow: scroll;"></div>
+    </div>
+  </body>
+  <script type="text/javascript" defer src="/public/js/script.js"></script>
+</html>
